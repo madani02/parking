@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="360dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@android:color/white">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/parking"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:text="Confirm your reservation here"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="160dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:id="@+id/text_dialogue"/>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/btn_dialogue_reserve"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        app:cardBackgroundColor="@android:color/holo_green_dark"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="Confirme"
+            android:textSize="25sp"
+            android:layout_marginLeft="70dp"
+            android:layout_gravity="center_vertical"/>
+    </android.support.v7.widget.CardView>
+
+</android.support.v7.widget.CardView>
