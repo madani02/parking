@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.lyes.parking.Reserve"
+    android:id="@+id/layout_reserve"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_reserve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="400dp"
+        android:layout_height="482dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tool_reserve"
+        app:layout_constraintVertical_bias="0.177">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/full_prénom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_action_name"
+                android:drawablePadding="12dp"
+                android:hint="Prénom"
+                android:padding="12dp"
+                android:textColorHint="@android:color/black" />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_action_name"
+            android:drawablePadding="12dp"
+            android:hint="Nom"
+            android:padding="12dp"
+            android:textColorHint="@android:color/black" />
+
+        <EditText
+            android:id="@+id/car_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/taxi"
+            android:drawablePadding="12dp"
+            android:hint="Email"
+            android:padding="12dp"
+            android:textColorHint="@android:color/black" />
+
+        <EditText
+            android:id="@+id/passw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@android:drawable/ic_partial_secure"
+            android:drawablePadding="12dp"
+            android:hint=" Mot de passe"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColorHint="@android:color/black" />
+
+        <EditText
+            android:id="@+id/confirme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@android:drawable/ic_partial_secure"
+            android:drawablePadding="12dp"
+            android:hint="Confirmer"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColorHint="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/black" />
+
+
+        <EditText
+            android:id="@+id/number_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/phone"
+            android:drawablePadding="12dp"
+            android:hint="Votre numéro"
+            android:padding="12dp"
+            android:textColorHint="@android:color/black" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/black" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_select_date"
+                android:layout_width="40dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/agenda"
+                android:padding="2dp" />
+
+            <TextView
+                android:id="@+id/show_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Date de naissance"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/btn_reserve"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="15dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="172dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/colorAccent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/valide" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="60dp"
+                android:text="valide"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
+    </FrameLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.0" />
+
+    <CheckBox
+        android:id="@+id/regle"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_marginBottom="80dp"
+        android:text="De plus, lorsque vous créez un compte, nous traitons vos informations "
+
+        android:textColor="#1B1616"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout5"
+        tools:layout_editor_absoluteX="6dp" />
+
+
+</android.support.constraint.ConstraintLayout>
